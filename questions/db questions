@@ -1,0 +1,28 @@
+here’s an example of the data we’d like to relate to a user:
+
+animalType: (one of: [dog, cat, hamster])
+name: string
+
+additional details:
+- some pets have the same owner
+- pets can only be 'cat' 'dog' or 'hamster'
+
+How would we relate this data to the users table?
+
+______________________________________________________________________________________
+
+
+users DB: [
+	{
+		name: 'David Erikson',
+		age: 42,
+		id: 1
+	},
+	{
+		name: 'Jessica Deiter',
+		age: 23,
+		id: 2
+	}
+]
+
+______________________________________________________________________________________
