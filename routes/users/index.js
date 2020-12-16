@@ -5,9 +5,9 @@ var router = new Router({
 	prefix: '/users'
 })
 
-router.get('/:name', async ctx => {
+router.get('/:name?/:age?', async ctx => {
 	Users.createUser({
-		age: 21,
+		age: ctx.params.age || 21,
 		name: ctx.params.name || 'name not provided'
 	})
   ctx.body = 'HELLO!'
